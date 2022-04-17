@@ -4,6 +4,7 @@
 
     Console.WriteLine("Ted' prosím napiš znak který chceš abych vyhledal");
     string searchLetter = Console.ReadLine();
+
     int x = txt.IndexOf(searchLetter);
     int z = 0;
     if(x == -1){
@@ -17,6 +18,7 @@
             txt = txt.Remove(x, 1);
             x = txt.IndexOf(searchLetter);
         }
+
         Console.WriteLine ("Vyhledávaný znak je v " + conclution + "pozici");
         Console.ReadKey();
     }
